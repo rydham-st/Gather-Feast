@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gather & Feast | Community Potluck</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Gather<span>&</span>Feast.</div>
+
+        <div class="nav-text">
+            COMMUNITY DINNER
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <p class="tagline">GOOD FOOD. GREAT COMPANY.</p>
+
+            <h1>A Table Full of<br>Memories.</h1>
+
+            <p>
+                Every dish has a story. Bring your favourite recipe,
+                share a meal and make this gathering special.
+            </p>
+
+            <a href="#register" class="hero-button">Contribute a Dish ↓</a>
+
+        </div>
+
+        <div class="hero-info">
+
+            <div>
+                <span>01</span>
+                <p>Bring a dish</p>
+            </div>
+
+            <div>
+                <span>02</span>
+                <p>Share a meal</p>
+            </div>
+
+            <div>
+                <span>03</span>
+                <p>Make memories</p>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- Registration Section -->
+        <section class="registration" id="register">
+
+            <div class="section-heading">
+
+                <p class="small-heading">BE PART OF THE TABLE</p>
+
+                <h2>What Are You Bringing?</h2>
+
+                <p>Register your contribution below.</p>
+
+            </div>
+
+
+            <div class="registration-layout">
+
+                <!-- Form -->
+                <div class="form-card">
+
+                    <form id="dishForm">
+
+                        <div class="input-group">
+
+                            <label for="dishName">Dish Name</label>
+
+                            <input
+                                type="text"
+                                id="dishName"
+                                placeholder="e.g. Homemade Lasagna"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="category">Dish Category</label>
+
+                            <select id="category" required>
+
+                                <option value="">Choose a category</option>
+                                <option value="Appetizers">Appetizers</option>
+                                <option value="Main Course">Main Course</option>
+                                <option value="Salads & Sides">Salads & Sides</option>
+                                <option value="Desserts">Desserts</option>
+                                <option value="Beverages">Beverages</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="input-group">
+
+                                <label for="portions">Portion Count</label>
+
+                                <select id="portions" required>
+
+                                    <option value="8-10">Serves 8–10</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="input-group">
+
+                                <label for="temperature">Serving Type</label>
+
+                                <select id="temperature" required>
+
+                                    <option value="">Choose type</option>
+                                    <option value="Needs Oven">Needs Oven</option>
+                                    <option value="Serve Cold">Serve Cold</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Allergen Checklist -->
+                        <div class="allergen-section">
+
+                            <h3>Allergen Information</h3>
+
+                            <p>Select all ingredients that apply.</p>
+
+                            <div class="allergen-list">
+
+                                <label>
+                                    <input type="checkbox" name="allergen" value="Nuts">
+                                    Nuts
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="allergen" value="Dairy">
+                                    Dairy
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="allergen" value="Gluten">
+                                    Gluten
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="allergen" value="Shellfish">
+                                    Shellfish
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="allergen" value="Eggs">
+                                    Eggs
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="allergen" value="Soy">
+                                    Soy
+                                </label>
+
+                                <label class="none-option">
+                                    <input type="checkbox" id="noAllergen">
+                                    None of these
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <button type="submit" class="submit-button">
+                            Add My Dish <span>→</span>
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <!-- Information Card -->
+                <div class="info-card">
+
+                    <p class="small-heading">A LITTLE REMINDER</p>
+
+                    <h3>Good food is meant to be shared.</h3>
+
+                    <p>
+                        Help us create a balanced table by contributing
+                        something delicious.
+                    </p>
+
+                    <div class="info-item">
+                        <span>01</span>
+                        <div>
+                            <h4>Portions Matter</h4>
+                            <p>Each contribution should serve 8–10 people.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span>02</span>
+                        <div>
+                            <h4>Declare Allergens</h4>
+                            <p>Help everyone make safe food choices.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span>03</span>
+                        <div>
+                            <h4>Serving Conditions</h4>
+                            <p>Let us know if your dish needs an oven.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Category Quota Section -->
+        <section class="quota-section">
+
+            <div class="section-heading">
+
+                <p class="small-heading">OUR DINNER PROGRESS</p>
+
+                <h2>What's Still Needed?</h2>
+
+                <p>Help us complete the perfect dinner menu.</p>
+
+            </div>
+
+            <div class="quota-board" id="quotaBoard">
+
+                <!-- JavaScript category counters -->
+
+            </div>
+
+        </section>
+
+
+        <!-- Dish Board Section -->
+        <section class="board-section">
+
+            <div class="section-heading">
+
+                <p class="small-heading">MADE WITH LOVE</p>
+
+                <h2>The Community Table</h2>
+
+                <p>Explore the dishes contributed by everyone.</p>
+
+            </div>
+
+            <div class="dish-board" id="dishBoard">
+
+                <!-- JavaScript registered dishes -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h2>Gather<span>&</span>Feast.</h2>
+
+        <p>Good food brings people together.</p>
+
+        <div class="footer-bottom">
+            Community Potluck Dinner | Made for sharing.
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

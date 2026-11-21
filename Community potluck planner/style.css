@@ -1,0 +1,545 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf7f0;
+    color: #39342d;
+    line-height: 1.6;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    background-color: #fffaf2;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #493729;
+}
+
+.logo span,
+footer h2 span {
+    color: #b77b45;
+}
+
+.nav-text {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #80674f;
+}
+
+
+/* Hero Section */
+
+.hero {
+    min-height: 520px;
+
+    background:
+        linear-gradient(rgba(30, 25, 19, 0.65),
+        rgba(30, 25, 19, 0.65)),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    padding: 80px 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.tagline,
+.small-heading {
+    color: #e5b77e;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 62px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.tagline) {
+    color: #eee6dc;
+    max-width: 480px;
+    margin-bottom: 28px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #d9a66c;
+    color: #30251b;
+    padding: 13px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background-color: #edc18e;
+}
+
+.hero-info {
+    border-left: 1px solid #b9a895;
+    padding-left: 35px;
+    min-width: 200px;
+}
+
+.hero-info div {
+    margin: 22px 0;
+}
+
+.hero-info span {
+    color: #e5b77e;
+    font-size: 13px;
+}
+
+.hero-info p {
+    font-family: Georgia, serif;
+    font-size: 19px;
+}
+
+
+/* Main Content */
+
+main {
+    width: 85%;
+    max-width: 1150px;
+    margin: 65px auto;
+}
+
+section {
+    margin-bottom: 75px;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    color: #493729;
+    margin-bottom: 8px;
+}
+
+.section-heading > p:last-child {
+    color: #82776b;
+}
+
+
+/* Registration Layout */
+
+.registration-layout {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 25px;
+}
+
+.form-card {
+    background-color: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(65, 45, 25, 0.07);
+}
+
+
+/* Form Fields */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #493729;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e5dfd5;
+    border-radius: 7px;
+    background-color: #fcfaf6;
+    font-size: 14px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #b77b45;
+}
+
+
+/* Form Row */
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+/* Allergen Section */
+
+.allergen-section {
+    margin-top: 5px;
+}
+
+.allergen-section h3 {
+    color: #493729;
+    margin-bottom: 5px;
+}
+
+.allergen-section p {
+    color: #82776b;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.allergen-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.allergen-list label {
+    background-color: #f8f4ed;
+    padding: 12px;
+    border-radius: 7px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+}
+
+.allergen-list label:hover {
+    background-color: #eee4d5;
+}
+
+.allergen-list input {
+    accent-color: #9a6238;
+}
+
+.none-option {
+    grid-column: 1 / -1;
+}
+
+
+/* Submit Button */
+
+.submit-button {
+    background-color: #795239;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #593b28;
+}
+
+.submit-button span {
+    margin-left: 8px;
+}
+
+
+/* Information Card */
+
+.info-card {
+    background:
+        linear-gradient(rgba(40, 30, 22, 0.78),
+        rgba(40, 30, 22, 0.78)),
+        url("https://images.unsplash.com/photo-1498837167922-ddd27525d352");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 32px;
+    border-radius: 12px;
+    color: white;
+}
+
+.info-card h3 {
+    font-family: Georgia, serif;
+    font-size: 29px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.info-card > p:not(.small-heading) {
+    color: #e5ded4;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.info-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 23px;
+}
+
+.info-item span {
+    color: #e5b77e;
+    font-weight: bold;
+}
+
+.info-item h4 {
+    color: white;
+    margin-bottom: 4px;
+}
+
+.info-item p {
+    color: #ded5ca;
+    font-size: 13px;
+}
+
+
+/* Category Quota Section */
+
+.quota-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.quota-card {
+    background-color: white;
+    padding: 23px 12px;
+    border-radius: 10px;
+    text-align: center;
+    border-bottom: 3px solid #bd9064;
+    box-shadow: 0 4px 15px rgba(65, 45, 25, 0.05);
+    transition: 0.3s;
+}
+
+.quota-card:hover {
+    transform: translateY(-5px);
+}
+
+.quota-card h3 {
+    color: #795239;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.quota-card p {
+    font-size: 13px;
+    color: #82776b;
+}
+
+
+/* Dish Board */
+
+.dish-board {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.dish-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #eee5d9;
+    box-shadow: 0 4px 15px rgba(65, 45, 25, 0.04);
+    transition: 0.3s;
+}
+
+.dish-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(65, 45, 25, 0.08);
+}
+
+.dish-card h3 {
+    color: #795239;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.dish-card p {
+    font-size: 14px;
+    color: #766c60;
+    margin-bottom: 7px;
+}
+
+.dish-card button {
+    background-color: #a35443;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.dish-card button:hover {
+    background-color: #81392f;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #392b21;
+    color: white;
+    text-align: center;
+    padding: 35px 15px 15px;
+}
+
+footer h2 {
+    font-family: Georgia, serif;
+    margin-bottom: 5px;
+}
+
+footer > p {
+    color: #d8c9b7;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #665344;
+    margin-top: 25px;
+    padding-top: 15px;
+    font-size: 12px;
+    color: #c4b5a5;
+}
+
+
+/* Tablet Responsive Design */
+
+@media (max-width: 800px) {
+
+    .hero {
+        padding: 60px 7%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-info {
+        border-left: none;
+        border-top: 1px solid #b9a895;
+        padding: 15px 0 0;
+        width: 100%;
+    }
+
+    .hero-info div {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .registration-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .quota-board {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dish-board {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* Mobile Responsive Design */
+
+@media (max-width: 500px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .nav-text {
+        font-size: 9px;
+    }
+
+    .hero {
+        min-height: 480px;
+        padding: 50px 7%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    main {
+        width: 92%;
+        margin: 40px auto;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .form-card,
+    .info-card {
+        padding: 22px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .quota-board {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
